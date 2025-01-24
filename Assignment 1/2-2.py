@@ -55,4 +55,5 @@ plt.grid()
 plt.legend()
 
 plt.tight_layout()
+plt.savefig("Figs/2-2.pdf", bbox_inches="tight", dpi=300)
 plt.show()
