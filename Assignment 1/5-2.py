@@ -25,7 +25,7 @@ def gradient_descent(initial_point, alpha, iterations):
 
 
 initial_point = [2, 2]
-alpha_divergence = 1.0
+alpha_divergence = 0.325
 iterations = 10
 
 points_divergence = gradient_descent(initial_point, alpha_divergence, iterations)
@@ -42,5 +42,7 @@ plt.axhline(0, color="black", linewidth=0.5, linestyle="--")
 plt.axvline(0, color="black", linewidth=0.5, linestyle="--")
 plt.legend()
 plt.grid()
+plt.xlim(x1_vals_div.min() - 1, x1_vals_div.max() + 1)
+plt.ylim(x2_vals_div.min() - 1, x2_vals_div.max() + 1)
 plt.savefig("Figs/5-2.pdf", bbox_inches="tight", dpi=300)
 plt.show()
