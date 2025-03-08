@@ -63,7 +63,7 @@ class CarEnvironment:
 
         done = new_position in TERMINAL_STATES
 
-        reward = -1
+        reward = -8
         if done:
             reward = 10
 

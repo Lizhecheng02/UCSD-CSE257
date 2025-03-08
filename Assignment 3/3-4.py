@@ -133,7 +133,7 @@ class CarPedestrianMDP:
 
 
 def q_learning(num_episodes=5000, learning_rate=0.1, discount_factor=0.9, exploration_rate=1.0, min_exploration_rate=0.01, exploration_decay=0.995):
-    env = CarPedestrianMDP(collision_penalty=-100)
+    env = CarPedestrianMDP(collision_penalty=-500)
 
     q_table = {}
 
